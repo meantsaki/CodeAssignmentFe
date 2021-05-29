@@ -5,6 +5,9 @@
 .container {
   width: auto; }
 
+.blocker {
+  z-index: 4 !important; }
+
 .disable {
   opacity: 0.5;
   pointer-events: none; }
