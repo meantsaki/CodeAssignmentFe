@@ -12,10 +12,10 @@ $ npm run gulp
 
 ## Responsive design
 I focus mainly on the 2 given resolutions 360/1440. Between those 2 i used Tailwind's breakpoints 
-sm	640px	@media (min-width: 640px) { ... }
-md	768px	@media (min-width: 768px) { ... }
-lg	1024px	@media (min-width: 1024px) { ... }
-xl	1280px	@media (min-width: 1280px) { ... }
+- sm	640px	@media (min-width: 640px) { ... }
+- md	768px	@media (min-width: 768px) { ... }
+- lg	1024px	@media (min-width: 1024px) { ... }
+- xl	1280px	@media (min-width: 1280px) { ... }
 
 
 ### JS Framework
