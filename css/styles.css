@@ -1,0 +1,172 @@
+* {
+  font-family: 'Roboto';
+  color: #25282B; }
+
+.container {
+  width: auto; }
+
+.disable {
+  opacity: 0.5;
+  pointer-events: none; }
+
+html,
+body {
+  height: 100%;
+  margin: 0; }
+
+header {
+  padding: 24px;
+  min-height: 350px;
+  background-image: url("../assets/Vector.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 236.18px 306px;
+  position: relative;
+  text-align: center; }
+  header img {
+    width: 60px;
+    height: 72px;
+    top: 24px;
+    left: 24px;
+    position: absolute; }
+  header h1 {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 36px;
+    margin-bottom: 16px;
+    margin-top: 122px; }
+  header h3 {
+    font-size: 16px;
+    line-height: 24px; }
+
+main {
+  background-color: #03B0C8;
+  display: flex;
+  flex-flow: column;
+  position: relative; }
+  main .character-card {
+    padding: 12px;
+    display: flex;
+    position: static;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 16px rgba(37, 40, 43, 0.1);
+    border-radius: 4px; }
+    main .character-card img {
+      width: 60px;
+      height: 60px;
+      margin-bottom: 16px; }
+    main .character-card .card-content {
+      margin-left: 12px; }
+    main .character-card .title {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: bold;
+      margin-bottom: 2px; }
+    main .character-card .subtitle {
+      font-size: 12px;
+      line-height: 24px; }
+      main .character-card .subtitle .fa.fa-circle {
+        color: #2AC769; }
+        main .character-card .subtitle .fa.fa-circle.dead {
+          color: #B82828; }
+  main .footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px; }
+    main .footer .page-master {
+      text-align: center;
+      background: #FFFFFF;
+      border: 1px solid #DFE3E8;
+      box-sizing: border-box;
+      border-radius: 4px;
+      width: 32px;
+      height: 32px;
+      margin-right: 16px; }
+      main .footer .page-master:last-of-type {
+        margin-right: 20px; }
+      main .footer .page-master i {
+        line-height: 32px; }
+    main .footer .page-master-text {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px; }
+
+.modal {
+  text-align: center !important;
+  overflow: hidden;
+  width: 100% !important;
+  height: fit-content;
+  max-width: 433px !important; }
+  .modal .icon-remove {
+    display: none !important; }
+  .modal a.fa.fa-times {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #70767D; }
+  .modal .profil {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .modal img {
+    width: 143px;
+    height: 143px;
+    margin-top: 17px; }
+  .modal h2 {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 24px;
+    margin-bottom: 16px;
+    margin-top: 16px; }
+  .modal .subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 24px; }
+    .modal .subtitle .fa.fa-circle {
+      color: #2AC769; }
+      .modal .subtitle .fa.fa-circle.dead {
+        color: #B82828; }
+  .modal .exta-data {
+    background-color: #03B0C8;
+    margin: 0 -30px;
+    margin-bottom: -15px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 24px;
+    padding-bottom: 22px; }
+    .modal .exta-data * {
+      color: #FFFFFF; }
+    .modal .exta-data .gender {
+      margin-bottom: 16px;
+      white-space: normal; }
+      .modal .exta-data .gender .gender-text {
+        font-weight: 500; }
+    .modal .exta-data .location {
+      margin-bottom: 16px; }
+
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 48px;
+    line-height: 56px; }
+  header h3 {
+    font-size: 16px;
+    line-height: 24px; }
+  main::after {
+    content: '';
+    background-image: url("../assets/futurebluebackground.png");
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1; } }
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px !important; } }

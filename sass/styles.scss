@@ -1,0 +1,272 @@
+@import './variables.scss';
+
+
+* {
+    font-family: 'Roboto';
+    color: $text-black;
+}
+
+.container{
+    width: auto;
+}
+
+.disable {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+header {
+    padding: 24px;
+    min-height: 350px;
+    background-image: url('../assets/Vector.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 236.18px 306px;
+    position: relative;
+    text-align: center;
+
+    img {
+        width: 60px;
+        height: 72px;
+        top: 24px;
+        left: 24px;
+        position: absolute;
+    }
+
+    h1 {
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 36px;
+        margin-bottom: 16px;
+        margin-top: 122px;
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+main {
+    background-color: $blue;
+    display: flex;
+    flex-flow: column;
+    position: relative;
+
+    .content {}
+
+    .character-card {
+        padding: 12px;
+        display: flex;
+        position: static;
+        width: 100%;
+        height: 100%;
+
+        background: #FFFFFF;
+        box-shadow: 0px 0px 16px rgba(37, 40, 43, 0.1);
+        border-radius: 4px;
+
+        img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 16px;
+        }
+
+        .card-content {
+            margin-left: 12px;
+        }
+
+        .title {
+            font-size: 16px;
+            line-height: 24px;
+
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .subtitle {
+            font-size: 12px;
+            line-height: 24px;
+
+            .fa.fa-circle {
+                color: $green;
+
+                &.dead {
+                    color: $red;
+                }
+            }
+        }
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+
+
+        .page-master {
+            text-align: center;
+            background: #FFFFFF;
+            border: 1px solid #DFE3E8;
+            box-sizing: border-box;
+            border-radius: 4px;
+            width: 32px;
+            height: 32px;
+            margin-right: 16px;
+
+            &:last-of-type {
+                margin-right: 20px
+            }
+
+            i {
+                line-height: 32px;
+            }
+        }
+
+        .page-master-text {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+
+
+.modal {
+    text-align: center !important;
+    overflow: hidden;
+    width: 100% !important;
+    height: fit-content;
+    max-width: 433px !important;
+
+    .icon-remove {
+        display: none !important;
+    }
+
+    a.fa.fa-times {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: #70767D;
+    }
+
+    .profil {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 143px;
+        height: 143px;
+        margin-top: 17px;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 24px;
+        margin-bottom: 16px;
+        margin-top: 16px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+
+        .fa.fa-circle {
+            color: $green;
+
+            &.dead {
+                color: $red;
+            }
+        }
+    }
+
+    .exta-data {
+        background-color: $blue;
+        margin: 0 -30px;
+        margin-bottom: -15px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px;
+        padding-top: 24px;
+
+        padding-bottom: 22px;
+
+        * {
+
+            color: #FFFFFF;
+        }
+
+        .gender {
+            margin-bottom: 16px;
+            white-space: normal;
+
+            .gender-text {
+                font-weight: 500;
+            }
+        }
+
+        .location {
+            margin-bottom: 16px;
+        }
+
+        .episodes {}
+    }
+}
+
+
+//sm
+@media (min-width: 640px) {}
+
+//md
+@media (min-width: 768px) {}
+
+//lg	1024px	
+@media (min-width: 1024px) {
+    header {
+        h1 {
+            font-size: 48px;
+            line-height: 56px;
+        }
+        h3 {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+    main::after {
+        content: '';
+        background-image: url('../assets/futurebluebackground.png');
+        width: 100%;
+        height: 100%;
+        background-size: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+
+
+//xl	1280px	
+@media (min-width: 1280px) {
+    
+
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+//2xl	1536px
+@media (min-width: 1536px) {}
